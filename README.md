@@ -11,29 +11,17 @@ The strategy focuses on trading pairs of ETFs that exhibit **cointegration**—a
 - Volatility-targeted position sizing  
 - Realistic transaction cost modeling, including spread and volume-based slippage
 
-## Features
 
-- **Cointegration Screening**: Applies the Engle-Granger test and correlation filtering to identify tradable pairs
-- **Trading Logic**: Executes long/short trades based on statistical divergence and mean-reversion signals
-- **Position Sizing**: Allocates capital based on rolling volatility estimates to control risk
-- **Backtesting Engine**: Simulates daily PnL, Sharpe ratio, and capital growth
-- **Transaction Costs**: Models spread and slippage per leg for realistic PnL
-- **Visualization**: Plots equity curves and portfolio performance metrics
+## Backtest Performance
 
-## Results
-The strategy was backtested on 16 highly-liquid US-sector and index ETFs from 2013 to 2025. After filtering for high-correlation and cointegrated pairs, the top 6 Sharpe-ranked pairs were traded in parallel using a mean-reversion approach.
+- **Total Return**: 11.7%  
+- **Annualized Sharpe Ratio**: 0.70  
+- **Backtest Period**: 12.3 years (2013–2025)  
+- **Number of Cointegrated Pairs Traded**: 3  
+- **Pairs Selected**: ('DIA', 'XLK'), ('XLK', 'XLY'), ('IYR', 'XLRE')  
+- **Max Capital Used per Pair**: 20%  
+- **PnL After Costs**: Includes realistic modeling of spread (0.5 bps) and quadratic slippage per leg  
 
-Performance Highlights:
-
-Annualized Sharpe Ratio: 1.42
-
-Total Return: 11.7% over 5.3 years
-
-Max Capital Allocated per Pair: 20% of portfolio
-
-Transaction Costs: Modeled using 0.5 bps spread and volume-based slippage
-
-Position Sizing: Volatility-targeted to 8% annualized portfolio risk
 
 
 The strategy consistently generated profit in out-of-sample periods post-2018, showing resilience to market conditions and robustness across ETF pairs
