@@ -37,8 +37,16 @@ The strategy consistently generated profit in out-of-sample periods post-2018, s
 - matplotlib (optional, for plots)
 - yfinance
 - pykalman
+## Getting Started
 
+Clone the repository and run the strategy:
+
+```bash
+git clone https://github.com/rishabh0022/Statistical-Arbitrage.git
+cd Statistical-Arbitrage
 Install dependencies using:
 
 ```bash
 pip install pandas numpy statsmodels matplotlib yfinance pykalman
+python backtester.py
+
