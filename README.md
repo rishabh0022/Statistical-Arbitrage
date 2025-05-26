@@ -37,7 +37,7 @@ Position Sizing: Volatility-targeted to 8% annualized portfolio risk
 
 
 The strategy consistently generated profit in out-of-sample periods post-2018, showing resilience to market conditions and robustness across ETF pairs
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/7ef9b436-a0c8-44e2-8211-494f73340e25)
 
 
 ## Requirements
