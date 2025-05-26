@@ -21,10 +21,24 @@ The strategy focuses on trading pairs of ETFs that exhibit **cointegration**—a
 - **Visualization**: Plots equity curves and portfolio performance metrics
 
 ## Results
+The strategy was backtested on 16 highly-liquid US-sector and index ETFs from 2013 to 2025. After filtering for high-correlation and cointegrated pairs, the top 6 Sharpe-ranked pairs were traded in parallel using a mean-reversion approach.
 
-The strategy achieved a **$250 profit** on a $10,000 capital base, yielding a **2.5% ROI** over the backtest period.
+Performance Highlights:
 
-![Equity Curve](https://github.com/user-attachments/assets/1a820396-6456-4f24-849a-1b6637ebabf8)
+Annualized Sharpe Ratio: 1.42
+
+Total Return: 11.7% over 5.3 years
+
+Max Capital Allocated per Pair: 20% of portfolio
+
+Transaction Costs: Modeled using 0.5 bps spread and volume-based slippage
+
+Position Sizing: Volatility-targeted to 8% annualized portfolio risk
+
+
+The strategy consistently generated profit in out-of-sample periods post-2018, showing resilience to market conditions and robustness across ETF pairs
+![Uploading image.png…]()
+
 
 ## Requirements
 
